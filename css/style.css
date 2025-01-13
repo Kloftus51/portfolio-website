@@ -83,19 +83,19 @@ a:active{
   background: var(--btn-bg-hover);
   color:var(--white);
 }
-/* layout styling */
+/* Layout styling */
 
 .container {
 padding: 0 15px;
 }
-.project-card{
+.header{
   margin: 25px 0; /*25px top and bottom, 0 left and right */
 }
 #hero h1{
   text-align: center; /* Centers text */
 }
 .logo{
-  max-width: 250px;
+  font-size: 3rem;
 }
 header{
   background-color: var(--primary-color);
@@ -104,12 +104,6 @@ header{
   position: fixed;
   width: 100%;
 
-.css-box-shadow
-  /*start ------------*/
-  width: [object Object]px; 
-  height: [object Object]px; 
-  background: var(--primary-color); 
-  border: solid #BDBDBD 1px; 
   box-shadow: 0 14px 21px rgba(0, 0, 0, 0.5)  ; 
   -webkit-box-shadow: 0 14px 21px rgba(0, 0, 0, 0.5)  ; 
   -moz-box-shadow: 0 14px 21px rgba(0, 0, 0, 0.5)  ; 
@@ -148,7 +142,11 @@ nav > ul > li > a:active {
   width: 100%;
 }
 main{
-  padding-top: 133px;
+  padding-top: 120px;
 }
-
-
+svg{
+  padding: 20px;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+}
