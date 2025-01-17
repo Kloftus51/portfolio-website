@@ -7,6 +7,7 @@
   --btn-bg:#cc0903;
   --btn-bg-hover:#6b0c08;
   --white:#ffffff;
+  --content-gap:3rem;
 
 }
 html{
@@ -62,14 +63,18 @@ a:focus{
 a:active{
   color:var(--secondary-color);
 }
+
 .btn{
   background: var(--btn-bg);
   color:var(--white);
   text-decoration: none;
-  padding: 1em 3em;
+  padding: 1em 2em;
   border-radius: 5px;
   text-transform: uppercase;
   display: inline-block;
+  border-bottom: 2px solid #60301f;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 .btn:visited{
   color:var(--white);
@@ -78,24 +83,35 @@ a:active{
 .btn:focus{
   background: var(--btn-bg-hover);
   color:var(--white);
+  opacity: 0.8;
 }
 .btn:active{
   background: var(--btn-bg-hover);
   color:var(--white);
 }
 /* Layout styling */
-
+ul{
+  margin: 0;
+}
 .container {
 padding: 0 15px;
+display: flex;
+flex-direction: column;
+gap: var(--content-gap);
 }
-.header{
-  margin: 25px 0; /*25px top and bottom, 0 left and right */
+section{
+  padding-block:2rem ;
 }
+
 #hero h1{
   text-align: center; /* Centers text */
 }
 .logo{
+  color: var(--text-color) !important;
   font-size: 3rem;
+  text-decoration: none;
+  line-height: 1;
+  display: inline-block;
 }
 header{
   background-color: var(--primary-color);
@@ -108,44 +124,53 @@ header{
   -webkit-box-shadow: 0 14px 21px rgba(0, 0, 0, 0.5)  ; 
   -moz-box-shadow: 0 14px 21px rgba(0, 0, 0, 0.5)  ; 
 }
+header .container{
+  gap: 1rem;
+}
 
 nav > ul > li {
   display: inline-block;
 }
 nav > ul{
   list-style-type: none ;
-  padding: 0%;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
 }
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 ;
+  text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--text-color);
+  line-height: 1;
+  display: block;
 }
 nav > ul > li > a:visited {
+  text-decoration: none;
   text-transform: uppercase;
   color: var(--text-color);
 }
 nav > ul > li > a:hover {
+  text-decoration: none;
   text-transform: uppercase;
   text-shadow: #353e4a;
   color: var(--white);
 }
 nav > ul > li > a:active {
+  text-decoration: none;
   text-transform: uppercase;
   color: var(--secondary-color);
 }
 #hero {
   background-color: var(--primary-color);
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
+ 
 }
 main{
-  padding-top: 120px;
+  padding-top: 76px;
 }
-svg{
-  margin: auto;
+.socials svg{
   padding: 20px;
   display: inline-block;
   width: 70px;
@@ -153,4 +178,82 @@ svg{
 }
 footer{
   text-align: center;
+}
+
+.project-card{
+  border-bottom: 1px solid #000;
+  padding-block-end: var(--content-gap);
+  display:grid;
+}
+.project-card:last-child{
+  border-bottom: 0;
+  padding-block-end: 0;
+
+}
+.about img{
+  aspect-ratio: 1;
+  object-fit: cover;
+  /* object-position: 0 39%; */
+  border-radius: 100vw;
+}
+
+@media (min-width: 768px){
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main{
+    padding-top: 50px;
+    font-size: 1.9rem;
+  }
+  .about{
+    display: flex;
+    border-radius: 50vw;
+  }
+  .my-image{
+    padding-block: 10px;
+    max-width: 500px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+  .project-card{
+    grid-template-columns: 1fr 1fr;
+    gap: calc(var(--content-gap) * 1);
+  }
+  .row{
+    padding:var(--content-gap);
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: calc(var(--content-gap) * 7);
+    justify-content: center;
+  }
+  footer{
+    padding-top: 50px;
+    font-size: 1.7rem;
+  }
+
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill:#fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move{
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px, 50px);}
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px,48px);}
+}
+.cloud-front{
+  animation: 30s cloud-move infinite alternate linear;
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
