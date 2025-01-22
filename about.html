@@ -17,7 +17,7 @@
 
         <div class="container">
 
-            <a href="#" class="logo">Kevin Loftus</a>
+            <a href="index.html" class="logo">Kevin Loftus</a>
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
@@ -32,19 +32,17 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <h1>About Me</h1>
-            </div>
-        </section>
         <section class="about">
             <div class="container">
+                <div class="container">
+                    <h1>About Me</h1>
+                </div>
                 <picture>
                     <source srcset="img/profile_images/profile_image@600.jpg" class="my-image"media="(max-width:767px)">
                     <img src="img/profile_images/profile_image@1200.jpg" class="my-image" alt="profile image">
                 </picture>
                 <div class="container">
-                    <div class="columns">
+                    <div class="text-block">
                         <h2 class="about__content">My Story</h2>
                             <p>Hello! I'm Kevin Loftus, a passionate UI designer with a unique blend of customer service experience and an artistic background. My journey into UI design began with a deep appreciation for creativity and a desire to enhance user experiences. My time in customer service has equipped me with the skills to understand user needs and deliver exceptional experiences, while my artistic background fuels my creativity and attention to detail.</p>
                             <p>I thrive on creating intuitive and visually appealing interfaces that not only meet user expectations but also delight and engage them. My goal is to design digital experiences that are both functional and beautiful, ensuring that users have a seamless and enjoyable interaction with the products I create.</p>
@@ -53,10 +51,11 @@
                     <div class="columns">
                             <h2>Skills & Tools</h2>
                       
-                        <div class="row">
-                            <div class="left-column">
-                                <h3>Relevant Skills</h3>
-                                <ul><li>User research</li>
+                        <div class="list-block">
+                            <div class="list-block_wrapper">
+                                <h3 class="list-block_heading">Relevant Skills</h3>
+                                <ul class="list-block_list">
+                                    <li>User research</li>
                                     <li>Wireframing</li>
                                     <li>Prototypes</li>
                                     <li>User-flows</li>
@@ -64,9 +63,10 @@
                                     <li>Attention to detail</li>
                                 </ul>
                             </div>
-                            <div class="right-column">
-                                <h3>Tools I used</h3>
-                                <ul><li>Figma</li>
+                            <div class="list-block_wrapper">
+                                <h3 class="list-block_heading">Tools I used</h3>
+                                <ul class="list-block_list">
+                                    <li>Figma</li>
                                     <li>Maze</li>
                                     <li>Photoshop & Fresco</li>
                                     <li>CSS, HTML, JavaScript</li>                            
@@ -111,13 +111,8 @@
                 <p>Copyright Kevin Loftus 2024</p>
             </div>
 
-
-
-
-
-
     </footer>
-
+<script src="js/scripts.js"></script>
 </body>
 
 </html>
