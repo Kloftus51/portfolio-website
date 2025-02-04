@@ -90,6 +90,9 @@ a:active{
   background: var(--btn-bg-hover);
   color:var(--white);
 }
+.fa-bars:visited{
+  color: #cc0903;
+}
 /* Layout styling */
 ul{
   margin: 0;
@@ -144,13 +147,33 @@ header .container{
   gap: 2rem;
 }
 
-
+.navtoggle,
+.navtoggle.responsive{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.navtoggle.responsive ul{
+  padding-block-start: 3rem ;
+}
 nav > ul{
   list-style-type: none ;
   padding: 0;
   display: flex;
   gap: 5rem;
   justify-content: space-between;
+}
+nav ul li:not(:last-child){
+  display: none;
+}
+nav li:last-child{
+  position: absolute;
+  right: 1em;
+    top: 24px;
+}
+.navtoggle.responsive li{
+  display: block;
 }
 nav > ul > li > a {
   padding: 0 ;
@@ -230,9 +253,27 @@ img{
   border: 1px solid #000;
   border-radius: 2rem;
 }
-
-.navtoggle li:last-child {
-  display: none;
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill:#fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move{
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px, 50px);}
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px,48px);}
+}
+.cloud-front{
+  animation: 30s cloud-move infinite alternate linear;
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 @media (min-width: 768px){
@@ -260,11 +301,15 @@ header .container {
   list-style: none;
   padding: 1rem;
 }
+
 nav ul {
   gap: 5rem;
 }
 nav > ul > li {
   display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
 }
 main{
   padding-top: 50px;
@@ -307,6 +352,7 @@ footer{
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
 }
 
 
@@ -360,6 +406,8 @@ footer{
   min-width: 641px;
 }
 
+}
+
 
 @media (min-width: 1440px){
 body{
@@ -408,33 +456,12 @@ section{
   min-width: 641px;
 }
 
+
 footer{
   .container{
-    font-size: 2.3rem;
+  font-size: 2.3rem;
   text-align: center;
   max-width: 1200px;
-}
+  }
 }
 
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill:#fcffad;}
-  100% {fill: #f76414;}
-}
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-@keyframes cloud-move{
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px, 50px);}
-}
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px,48px);}
-}
-.cloud-front{
-  animation: 30s cloud-move infinite alternate linear;
-}
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
