@@ -195,7 +195,6 @@ nav > ul > li > a:visited {
 nav > ul > li > a:hover {
   text-decoration: none;
   text-transform: uppercase;
-  text-shadow: #353e4a;
   color: var(--white);
 }
 nav > ul > li > a:active {
@@ -477,11 +476,9 @@ section{
   align-items: center;
   }
 
-footer{
   .container{
   font-size: 2.3rem;
   text-align: center;
   max-width: 1200px;
   }
 }
-
