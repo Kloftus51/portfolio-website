@@ -44,6 +44,7 @@ h2{
 h3{
   font-weight: 600;
   font-size: 2.6rem;
+  padding: 2rem;
 }
 h4{
   font-weight: 600;
@@ -58,11 +59,11 @@ a:visited{
 }
 a:hover,
 a:focus{
-  color:var(--secondary-color);
+  color:var(--white);
   text-decoration: none;
 }
 a:active{
-  color:var(--secondary-color);
+  color:var(--white);
 }
 
 .btn{
@@ -113,6 +114,7 @@ section{
 }
 #hero p{
   text-align: center;
+  max-width: 800px;
 }
 .logo{
   max-width: 150px;
@@ -129,7 +131,7 @@ header{
   width: 100%;
 
   box-shadow: 0 14px 21px rgba(0, 0, 0, 0.5)  ; 
-  -webkit-box-shadow: 0 14px 21px rgba(0, 0, 0, 0.5)  ; 
+  -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.5)  ; 
   -moz-box-shadow: 0 14px 21px rgba(0, 0, 0, 0.5)  ; 
 }
 header .container{
@@ -138,7 +140,7 @@ header .container{
 .content-wrapper{
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   gap: 2rem;
 }
 .content_media-wrapper{
@@ -146,6 +148,7 @@ header .container{
   flex-direction: column;
   gap: 2rem;
 }
+
 
 .navtoggle,
 .navtoggle.responsive{
@@ -162,9 +165,9 @@ nav > ul{
   list-style-type: none ;
   padding: 0;
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   justify-content: space-between;
-  align-items: center;
+  text-align: center;
 
 }
 nav ul li:not(:last-child){
@@ -172,14 +175,14 @@ nav ul li:not(:last-child){
 }
 nav li:last-child{
   position: absolute;
-  right: 1em;
-    top: 24px;
+  right: 0px;
+    top: 17px;
 }
 .navtoggle.responsive li{
   display: block;
 }
 nav > ul > li > a {
-  padding: 0 ;
+  padding: 0.5em ;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -200,7 +203,7 @@ nav > ul > li > a:hover {
 nav > ul > li > a:active {
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--secondary-color);
+  color: var(--text-color);
 }
 .icon:hover,
 .icon:active {
@@ -213,13 +216,13 @@ color: var(--text-color);
 }
 
 main{
-  padding-top: 76px;
+  padding-top: 84.5px;
 }
 .socials svg{
   padding: 20px;
   display: inline-block;
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
 }
 footer{
   text-align: center;
@@ -296,7 +299,6 @@ header .container {
 .list-block{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 .list-block_heading{
   display: flex;
@@ -318,8 +320,8 @@ nav ul li:not(:last-child) {
   display: none;
 }
 main{
-  padding-top: 50px;
-  text-align: center;
+  padding-top: 85.5px;
+  text-align: left;
 }
 .about{
   display: flex;
@@ -421,6 +423,7 @@ footer{
   justify-content: space-between;
   align-items: center;
   }
+ 
 }
 
 
@@ -456,7 +459,7 @@ section{
 }
 .list-block_wrapper{
   background-color: var(--primary-color);
-  padding: var(--content-gap);
+  padding: var(--content-gap) calc(var(--content-gap)*4);
   border-radius: 1rem;
   text-align: center;
   display: flex;
@@ -478,7 +481,36 @@ section{
 
   .container{
   font-size: 2.3rem;
-  text-align: center;
+  text-align: left;
   max-width: 1200px;
   }
+}
+/*Back to top */
+
+html{
+  scroll-behavior: smooth;
+}
+.back-to-top{
+  position:fixed;
+  bottom:4rem;
+  right: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cc0903;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+.back-to-top span{
+  color: #ffffff;
+  font-size: 3rem;
+  transition: 0.2s ease-out;
+}
+.back-to-top:hover{
+  background-color: #a10802;
+}
+.back-to-top:hover span{
+  transform: translate(-4px);
 }

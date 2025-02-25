@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b5b937cd2f.js" crossorigin="anonymous"></script>
+    <title>Jaunt App</title>
+</head>
+
+<body>
+    <header class="hero">
+
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html"><img class="logo" src="img/logo/Logo-600px.svg" alt="Kevin Loftus"></a>                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()" style="font-size: 2rem;"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                    
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Jaunt</h1>
+            </div>
+            <div class="project">
+                <div class="container">
+                    <div>
+                        <picture>
+                            <source srcset="img/jaunt_app/jaunt_cover_img/jaunt_cover_image600_@1x.jpg" media="(max-width:767px)">
+                            <img src="img/jaunt_app/jaunt_cover_img/jaunt_cover_image1200_@1x.jpg" alt="Jaunt app cover">
+                        </picture>
+                    </div>
+                    <div class="text-block">
+                        <p>For those eager to enjoy an evening out or discover a new city without the hassle of planning, this app will be perfect solution. It will simplify the planning process, offering users a tailored itinerary with just a few user perferences or a comprehensive plan based on their current location. Whether it's due to lack of time, a dislike for planning, or a desire for new experiences, the Jaunt app will ensure a seamless and enjoyable exploration.</p>
+                        <div class="prototype-link">
+                            <a href="https://www.figma.com/proto/vjfQXKb6jxSDF12tyyhkr4/JAUNT-App?node-id=26-2&p=f&t=dYQgBn74cdCBGt9F-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=26%3A2&show-proto-sidebar=1" target="_blank" class="btn">Try the Prototype</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: whitesmoke;">
+            <div class="container">
+                <h2>Hypothesis</h2>
+                <div class="content-wrapper">
+                    <div class="text-block">
+                        <p>For many, the thought of meticulously planning every detail of a day or evening out is overwhelming, leading them to revert to familiar plans or, in some cases, to forgo outings entirely. An application that simplifies this process by swiftly organizing all elements of an outing, while also offering the flexibility of easy modifications, would be greatly welcomed and in demand.</p>  
+                    </div>    
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="img/jaunt_app/jaunt.img/jaunt-600.jpg/mockup2-600px.jpg" media="(max-width:767px)">
+                        <img src="img/jaunt_app/jaunt.img/jaunt-1200.jpg/mockup2-1200px.jpg" alt="Jaunt mockup image">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>User Research</h2>
+                <div class="content-wrapper">
+                    <div class="text-block">
+                        <p>I interviewed users to learn about their trip planning experiences and challenges. Their responses, gathered through open-ended questions, provided critical insights for the user-centered design of this location-based recommendation app.
+                        </p>
+                        <h3>User questions</h3>
+                        <ul>
+                            <li>Are you someone who enjoys qoing out on day trips or out in the evenings?</li>
+                            <li>How do you use websites or apps to help you plan a trip out and If you don’t what are the main reasons why?</li>
+                            <li>What features of any existing app did you find the most useful and why?</li>
+                            <li>Regarding the websites and applications you utilize, which functionalities do you consider to be superfluous, and can you share your reasons for this perspective?</li>
+                            <li>If an app/website made a suggestion on where to go what would be the biggest factor on making you 
+                                agree with it and why?</li>
+                            <li>How often during the day out would you have to go back into the app/website to re-plan and what are 
+                                the main reasons why?</li>
+                            <li> If there is an app designed for helping people plan a day out what features do you think would be 
+                                essential and why?</li>
+                        </ul>
+                        <h3>Patterns</h3>
+                        <ul>
+                            <li>Everyone liked to be able to navigate the map with ease</li>
+                            <li>People like to be able to check the places before hand either via reviews or the photos</li>
+                        </ul>
+                        <h3>Frustrations</h3>
+                        <ul>
+                            <li>Lack of accuracy seemed to be the most frustrating issue for people. </li>
+                        </ul>
+                        <h3>Surprises</h3>
+                        <ul>
+                            <li>I guess the most surprising thing was the fact that Google Maps isn’t the best at getting you to the right level, it just gets you close enough which works for most places but not something in say a basement or rooftop. </li>
+                        </ul>
+                    </div>
+                    <picture>
+                        <source srcset="img/jaunt_app/jaunt.img/jaunt-600.jpg/mockup-600px.jpg" media="(max-width:767px)">
+                        <img src="img/jaunt_app/jaunt.img/jaunt-1200.jpg/mockup1-1200px.jpg" alt="user flow diagram">
+                    </picture> 
+                    
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: whitesmoke;">
+            <div class="container">
+                <h2> User Personas</h2>
+                <div class="content-wrapper">
+                    <div class="text-block">
+                        <p>Based on user testing results, I developed user personas that provided a comprehensive understanding of my target audience. These personas, detailing user frustrations, goals, and motivations, served as a constant reference throughout the app's development, ensuring the final product aligned with user needs.</p>
+                    </div>
+                    <picture>
+                        <source srcset="img/jaunt_app/jaunt.img/jaunt-600.jpg/user-persona-600px.jpg" media="(max-width:767px)">
+                        <img src="img/jaunt_app/jaunt.img/jaunt-1200.jpg/user-personas-1200px.jpg" alt="user flow diagram">
+                    </picture> 
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2> User-Flow</h2>
+                <div class="content-wrapper">
+                    <div class="text-block">
+                        <p>Following the user testing and persona development, I proceeded to create the user flow. This process provided a deeper understanding of how to optimize the web-based app's structure to better align with user needs and wants, while also maintaining a familiar and intuitive design. </p>
+                    </div>
+                    <picture>
+                        <source srcset="img/jaunt_app/jaunt.img/jaunt-600.jpg/user-flow-600px.jpg" media="(max-width:767px)">
+                        <img src="img/jaunt_app/jaunt.img/jaunt-1200.jpg/user-flow-1200px.jpg" alt="user flow diagram">
+                    </picture> 
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: whitesmoke;">
+            <div class="container">
+                <h2>Wireframes</h2>
+                <div class="content-wrapper">
+                    <div class="text-block">
+                        <p>When designing my wireframes, I began with the 'Crazy Eights' technique, which helped me rapidly generate initial ideas. From there, I refined my preferred design into these low-fidelity paper wireframes.
+                        </p>
+                    </div>
+                    <picture>
+                        <source srcset="img/jaunt_app/jaunt.img/jaunt-600.jpg/low-fid-600px.jpg" media="(max-width:767px)">
+                        <img src="img/jaunt_app/jaunt.img/jaunt-1200.jpg/low-fid-1200px.jpg" alt="low-fidelity wireframes">
+                    </picture> 
+                    <div class="text-block">
+                        <p>Once I was fully satisfied with my low-fidelity wireframes, I transferred them into Figma and developed them into the mid-fidelity wireframes seen below. From there, I was able to focus more easily on how all the key elements interacted on the mobile screen, while also ensuring a strong informational hierarchy.
+                        </p>
+                    </div>
+                    <picture>
+                        <source srcset="img/jaunt_app/jaunt.img/jaunt-600.jpg/mid-fid-600px.jpg" media="(max-width:767px)">
+                        <img src="img/jaunt_app/jaunt.img/jaunt-1200.jpg/mid-fid-1200px.jpg" alt="low-fidelity wireframes">
+                    </picture> 
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>Style guide</h2>
+                <div class="content-wrapper">
+                    <div class="text-block">
+                        <p>With my wireframes finalized, I began creating a style guide for the app. Much like the user personas helped me easily refer back to the users' wants and needs, the style guide helped me develop a unified style that I could readily refer to during the app's development.</p>
+                        <p>As this was a location-based recommendation app, I wanted it to evoke a light, outdoorsy feel. Therefore, I chose yellows and greens for the primary colors, complemented by a dark blue for the text and borders, ensuring strong readability overall.</p>
+                    </div>
+                </div>
+                <div class="content_media-wrapper">
+                    <picture>
+                        <source srcset="img/jaunt_app/jaunt.img/jaunt-600.jpg/frame-17.jpg" media="(max-width:767px)">
+                        <img src="img/jaunt_app/jaunt.img/jaunt-1200.jpg/frame-18.jpg" alt="Style-guide">
+                    </picture> 
+                </div>
+                <div class="content_media-wrapper">
+                    <picture>
+                        <source srcset="img/jaunt_app/jaunt.img/jaunt-600.jpg/mockup3-600px.jpg" media="(max-width:767px)">
+                        <img src="img/jaunt_app/jaunt.img/jaunt-1200.jpg/mockup3-1200px.jpg" alt="mockup">
+                    </picture> 
+                </div>
+                <div class="content_media-wrapper">
+                    <picture>
+                        <source srcset="img/jaunt_app/jaunt.img/jaunt-600.jpg/mockup4-600.jpg" media="(max-width:767px)">
+                        <img src="img/jaunt_app/jaunt.img/jaunt-1200.jpg/mockup4-1200px.jpg" alt="laptop mockup">
+                    </picture> 
+                </div>
+
+            </div>
+        </section>
+
+        <section style="background-color: whitesmoke;">
+            <div class="container">
+                <h2 class="heading">Conclusion</h2>
+                <div class="content-wrapper">
+                    <div class="text-block">
+                        <p>The UX/UI case study for our location-based app, JAUNT, has been insightful and rewarding. By focusing on user-centered design, I've created a platform that simplifies day trip planning, making it more enjoyable and efficient.</p>
+                        <p>Challenges I faced included selecting the appropriate color palette for this type of app and designing a simple, intuitive layout that worked seamlessly across multiple screens.</p>
+                    </div>
+                    <div class="text-block">
+                        <h3>Next Iteration</h3>
+                        <p>In the next iteration, I would add the following features:</p>
+                        <ul><li>Fully implemented search filters</li>
+                            <li>An E-ticket and booking menu to steamline users' journeys.</li>
+                            <li>A weather feature that notifies users of changing conditions and provides alternative plans.</li>
+                        </ul>
+                    </div>  
+                    <div class="content_media wrapper">
+                        <picture>
+                            <source srcset="img/jaunt_app/jaunt.img/jaunt-600.jpg/mockup5-600px.jpg" media="(max-width:767px)">
+                            <img src="img/jaunt_app/jaunt.img/jaunt-1200.jpg/mockup5-1200px.jpg" alt="desktop mockup">
+                        </picture> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>Thank You!</h2>
+                <p style="text-align: center">You for taking the time to explore Jaunt, my location-based recommendation app. I welcome any questions or feedback you may have, so please don't hesitate to reach out.</p>
+            </div>
+        </section>
+        
+    </main>
+        
+       
+    <footer id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>
+                Do you like my work and want to discuss opportunities? Please feel free to drop me a message and I'll happliy respond.
+            </p>
+            <div>
+                <a href="https://form.jotform.com/250423081878358" class="btn"> Contact Me</a>
+
+            </div>
+            <div class="socials">
+                <!--Social Media Layout and Placeholders-->
+                <a href="https://www.linkedin.com/in/kevin-loftus-927235242/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"></path></svg>
+                </a>
+
+                <a href="https://www.behance.net/kevinloftus1" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.44262 5.34998C8.08197 5.34998 8.67213 5.39945 9.21311 5.54786C9.7541 5.6468 10.1967 5.84468 10.5902 6.09203C10.9836 6.33938 11.2787 6.68566 11.4754 7.13089C11.6721 7.57612 11.7705 8.12029 11.7705 8.71393C11.7705 9.40651 11.623 10.0002 11.2787 10.4454C10.9836 10.8906 10.4918 11.2864 9.90164 11.5832C10.7377 11.8305 11.377 12.2758 11.7705 12.8694C12.1639 13.463 12.4098 14.2051 12.4098 15.0461C12.4098 15.7387 12.2623 16.3323 12.0164 16.827C11.7705 17.3217 11.377 17.7669 10.9344 18.0638C10.4918 18.3606 9.95082 18.6079 9.36066 18.7563C8.77049 18.9047 8.18033 19.0037 7.59016 19.0037H1V5.34998H7.44262ZM7.04918 10.8906C7.59016 10.8906 8.03279 10.7422 8.37705 10.4949C8.72131 10.2475 8.86885 9.80227 8.86885 9.2581C8.86885 8.96128 8.81967 8.66446 8.72131 8.46658C8.62295 8.2687 8.47541 8.12029 8.27869 7.97188C8.08197 7.87294 7.88525 7.774 7.63934 7.72453C7.39344 7.67506 7.14754 7.67506 6.85246 7.67506H4V10.8906H7.04918ZM7.19672 16.7281C7.4918 16.7281 7.78689 16.6786 8.03279 16.6291C8.27869 16.5797 8.52459 16.4807 8.72131 16.3323C8.91803 16.1839 9.06557 16.0355 9.21311 15.7881C9.31148 15.5408 9.40984 15.244 9.40984 14.8977C9.40984 14.2051 9.21312 13.7104 8.81967 13.3641C8.42623 13.0673 7.88525 12.9189 7.2459 12.9189H4V16.7281H7.19672ZM16.6885 16.6786C17.082 17.0744 17.6721 17.2722 18.459 17.2722C19 17.2722 19.4918 17.1238 19.8852 16.8765C20.2787 16.5797 20.5246 16.2828 20.623 15.986H23.0328C22.6393 17.1733 22.0492 18.0143 21.2623 18.5585C20.4754 19.0532 19.541 19.35 18.4098 19.35C17.6229 19.35 16.9344 19.2016 16.2951 18.9542C15.6557 18.7069 15.1639 18.3606 14.7213 17.8659C14.2787 17.4206 13.9344 16.8765 13.7377 16.2334C13.4918 15.5903 13.3934 14.8977 13.3934 14.1062C13.3934 13.3641 13.4918 12.6715 13.7377 12.0284C13.9836 11.3853 14.3279 10.8411 14.7705 10.3464C15.2131 9.90121 15.7541 9.50545 16.3443 9.2581C16.9836 9.01075 17.6229 8.86234 18.4098 8.86234C19.2459 8.86234 19.9836 9.01075 20.623 9.35704C21.2623 9.70333 21.7541 10.0991 22.1475 10.6927C22.541 11.2369 22.8361 11.88 23.0328 12.5726C23.1311 13.2652 23.1803 13.9577 23.1311 14.7493H16C16 15.5408 16.2951 16.2828 16.6885 16.6786ZM19.7869 11.4843C19.4426 11.138 18.9016 10.9401 18.2623 10.9401C17.8197 10.9401 17.4754 11.039 17.1803 11.1874C16.8852 11.3358 16.6885 11.5337 16.4918 11.7316C16.2951 11.9295 16.1967 12.1768 16.1475 12.4242C16.0984 12.6715 16.0492 12.8694 16.0492 13.0673H20.4754C20.3771 12.3252 20.1311 11.8305 19.7869 11.4843ZM15.459 6.2899H20.9672V7.62559H15.459V6.2899Z"></path></svg> 
+
+                </a>
+            </div>
+
+            <a href="#" class="back-to-top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
+            <div>
+                <p>Copyright Kevin Loftus 2025</p>
+            </div>
+
+        </div>
+    </footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+</body>
+
+</html>
